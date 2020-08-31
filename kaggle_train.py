@@ -33,8 +33,8 @@ if __name__ == '__main__':
     # val_set = ValDatasetFromFolder('data/DIV2K_valid_HR', upscale_factor=UPSCALE_FACTOR)
 	# train_loader = DataLoader(dataset=train_set, num_workers=4, batch_size=64, shuffle=True)
     # val_loader = DataLoader(dataset=val_set, num_workers=4, batch_size=1, shuffle=False)
-    train_set = TrainDatasetFromFolder('./input/sr-test/VOC2012/VOC2012/train', crop_size=CROP_SIZE, upscale_factor=UPSCALE_FACTOR)
-    val_set = ValDatasetFromFolder('./input/sr-test/VOC2012/VOC2012/val', upscale_factor=UPSCALE_FACTOR)
+    train_set = TrainDatasetFromFolder('../input/sr-test/VOC2012/VOC2012/train', crop_size=CROP_SIZE, upscale_factor=UPSCALE_FACTOR)
+    val_set = ValDatasetFromFolder('../input/sr-test/VOC2012/VOC2012/val', upscale_factor=UPSCALE_FACTOR)
     train_loader = DataLoader(dataset=train_set, num_workers=4, batch_size=64, shuffle=True)
     val_loader = DataLoader(dataset=val_set, num_workers=4, batch_size=1, shuffle=False)
     
