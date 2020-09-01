@@ -1,3 +1,16 @@
+# This is a torch version of SRGAN run in kaggle kernels
+load the datasets and run kaggle_train.py, the data file path can be changed in the .py file
+
+# New requirements
+Unlike the original requirements, the packages are re-installed, the requirements2.txt is copyed from the yolov5 project, some versions has been changed.
+```
+pip install -r -requirements2.txt
+```
+```
+pip install pytorch_ssim
+```
+
+
 # SRGAN
 A PyTorch implementation of SRGAN based on CVPR 2017 paper 
 [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802).
