@@ -71,6 +71,7 @@ if __name__ == '__main__':
     generator_criterion = GeneratorLoss()
     
     if torch.cuda.is_available():
+	print('GPU mode')
         netG.cuda()
         netD.cuda()
         generator_criterion.cuda()
